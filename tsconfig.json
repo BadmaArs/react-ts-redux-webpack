@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "module": "ESNext",
+      "target": "es5",
+      "jsx": "react-jsx",
+      "allowJs": true,
+      "moduleResolution": "node",
+      // Подключенные модули после ts есть в документации 
+      // https://webpack.js.org/configuration/configuration-languages/ ссылка на доку 
+      // В приведенном выше примере предполагается, что в вашем файле используется TypeScript 
+      // версии >= 2.7 или новее с параметрами new esModuleInteropи allowSyntheticDefaultImportsкомпилятора tsconfig.json.
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+    },
+    "ts-node": {
+      "compilerOptions": {
+        "module": "CommonJS"
+      }
+    }
+  }
