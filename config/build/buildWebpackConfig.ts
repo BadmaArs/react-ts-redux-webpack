@@ -20,7 +20,7 @@ export function buildWepackConfig (options: BuildOption): webpack.Configuration 
         module: {
             rules: duildLoaders(options),
           },
-        resolve: duildResolvers(),
+        resolve: duildResolvers(options),
         devtool: isDev ? 'inline-source-map' : undefined ,
         devServer: isDev ? buildDevServer(options) : undefined
     }
