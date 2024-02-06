@@ -7,7 +7,6 @@ interface NavBarProps {
 }
 
 export const NavBar = ({className}: NavBarProps) => {
-    console.log('test revers')
     return (
         <div className={classNames(cls.navBar, {}, [className])}>
             <div className={cls.links}>
