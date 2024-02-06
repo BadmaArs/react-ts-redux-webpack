@@ -7,6 +7,7 @@ interface NavBarProps {
 }
 
 export const NavBar = ({className}: NavBarProps) => {
+    console.log('test nout')
     return (
         <div className={classNames(cls.navBar, {}, [className])}>
             <div className={cls.links}>
