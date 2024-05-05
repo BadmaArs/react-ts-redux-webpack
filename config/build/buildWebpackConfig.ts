@@ -2,8 +2,8 @@ import { BuildOption } from './types/config';
 import webpack from 'webpack';
 import path from 'path';
 import {buildsPlugins} from './buildPlugins';
-import {duildLoaders} from './buldLoaders';
-import {duildResolvers} from './buildResolvers';
+import {buildLoaders} from './buldLoaders';
+import {buildResolvers} from './buildResolvers';
 import { buildDevServer } from './buildDevServer';
 
 export function buildWepackConfig (options: BuildOption): webpack.Configuration {
@@ -18,9 +18,9 @@ export function buildWepackConfig (options: BuildOption): webpack.Configuration 
         },
         plugins: buildsPlugins(options),
         module: {
-            rules: duildLoaders(options),
+            rules: buildLoaders(options),
           },
-        resolve: duildResolvers(options),
+        resolve: buildResolvers(options),
         devtool: isDev ? 'inline-source-map' : undefined ,
         devServer: isDev ? buildDevServer(options) : undefined
     }

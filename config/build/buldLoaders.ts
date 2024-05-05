@@ -2,7 +2,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack from 'webpack';
 import { BuildOption } from './types/config';
 
-export function duildLoaders ({isDev}: BuildOption): webpack.RuleSetRule[] {
+export function buildLoaders ({isDev}: BuildOption): webpack.RuleSetRule[] {
     const cssLoader = {
         test: /\.s[ac]ss$/i,
         use: [

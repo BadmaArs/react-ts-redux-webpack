@@ -1,7 +1,7 @@
 import { ResolveOptions } from 'webpack';
 import { BuildOption } from './types/config';
 
-export function duildResolvers (options: BuildOption): ResolveOptions {
+export function buildResolvers (options: BuildOption): ResolveOptions {
     return {
         extensions: ['.tsx', '.ts', '.js'],
         preferAbsolute: true,
